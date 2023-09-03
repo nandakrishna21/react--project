@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene | Products Page</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="kafene-logo">
+                <p>Kafene</p>
+            </div>
+            <div class="nav-links">
+                <a href="./orders.html">Orders</a>
+                <a class="active-link" href="./products.html">Products</a>
+                <a href="./users.html">Users</a>
+            </div>
+            <div id="logout">
+                <a href="./index.html">
+                    <button>Logout</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="orders-container" id="ord-cont">
+        <h3>Products</h3>
+        <div class="main-sec">
+            <div id="filter-container" class="prod-filt">
+                <h5>Filters</h5>
+                <p id="ord-count">Count: </p>
+                <label>
+                    <input id="exp" type="checkbox" value="exp">Expired
+                </label>
+                <label>
+                    <input id="low-stock" type="checkbox" value="low-stock">Low Stock
+                </label>
+            </div>
+            <div id="ord-list">
+                <table class="ordprod-tab products">
+
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Nanda Krishna &copy; 2023 All Rights Reserved
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./javascript/products.js"></script>
+</body>
+
+</html>

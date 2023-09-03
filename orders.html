@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene | Orders Page</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="kafene-logo">
+                <p>Kafene</p>
+            </div>
+            <div class="nav-links">
+                <a class="active-link" href="./orders.html">Orders</a>
+                <a href="./products.html">Products</a>
+                <a href="./users.html">Users</a>
+            </div>
+            <div id="logout">
+                <a href="./index.html">
+                    <button>Logout</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="orders-container" id="ord-cont">
+        <h3>Orders</h3>
+        <div class="main-sec">
+            <div id="filter-container">
+                <h5>Filters</h5>
+                <p id="ord-count">Count: </p>
+                <label>
+                    <input id="new" type="checkbox" value="new">New
+                </label>
+                <label>
+                    <input id="pack" type="checkbox" value="packed">Packed
+                </label>
+                <label>
+                    <input id="trans" type="checkbox" value="intransit">Intransit
+                </label>
+                <label>
+                    <input id="del" type="checkbox" value="delivered">Delivered
+                </label>
+            </div>
+            <div id="ord-list">
+                <table class="ordprod-tab">
+
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        Nanda Krishna &copy; 2023 All Rights Reserved
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./javascript/orders.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene | Users Page</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="kafene-logo">
+                <p>Kafene</p>
+            </div>
+            <div class="nav-links">
+                <a href="./orders.html">Orders</a>
+                <a href="./products.html">Products</a>
+                <a class="active-link" href="./users.html">Users</a>
+            </div>
+            <div id="logout">
+                <a href="./index.html">
+                    <button>Logout</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="orders-container" id="ord-cont">
+        <h3>Users</h3>
+        <div class="users-cont">
+            <input id="search-box" placeholder="Search Users Here..." type="search">
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div class="main-sec">
+            <div id="ord-list">
+                <table class="ordprod-tab products">
+
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Nanda Krishna &copy; 2023 All Rights Reserved
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./javascript/users.js"></script>
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
